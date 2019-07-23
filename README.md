@@ -8,11 +8,13 @@ Run the function egui:gui/code/main to run it
 
 Run the function egui:gui/code/setup once to set it up
 
+Functions within the gui/code folder can otherwise be fully ignored, and don't need to be edited.
+
 # Basic Information
 
-gui_1.mcfunction and gui_2.mcfunction are GUI pages. More can be added
+gui_1.mcfunction and gui_2.mcfunction are GUI pages. More pages can be added in pages.mcfunction.
 
-pages.mcfunction assigns a page function to a page id
+pages.mcfunction assigns a page function to a page id.
 
 Example:
 
@@ -29,6 +31,9 @@ Assigns page with id 1 to "gui_1.mcfunction"
 Items can be placed on any slot. Each item in the gui needs to have "egui" set to 1. Use "eval" to assign an id to an item.
 The execute command has an id and a command. (Several ones with the same id can be used of course)
 If an item with the id is taken, all commands that correspond to that id are triggered. Command order is irrelevant.
+Basically each item only needs two lines to work:
+1. The replaceitem line that places it
+2. An Execute line that executes something (however, of course, several executes can also be used)
 
 
 
