@@ -26,6 +26,7 @@ Assigns page with id 1 to "gui_1.mcfunction"
 
 
 > replaceitem entity @s enderchest.5 stick{eval:2,egui:1}
+
 > execute as @s[scores={tsEGUI_guiVal=2}] run say #2
 
 Items can be placed on any slot. Each item in the gui needs to have "egui" set to 1. Use "eval" to assign an id to an item.
@@ -35,10 +36,14 @@ Basically each item only needs two lines to work:
 1. The replaceitem line that places it
 2. An Execute line that executes something (however, of course, several executes can also be used)
 
+It is also posssible to have items with nothing happening when they are clicked, or click events that are impossible to trigger (useful when the ui is dynamic)
+
 
 
 > replaceitem entity @s enderchest.0 stick{eval:1,egui:1}
+
 > replaceitem entity @s enderchest.1 stick{eval:1,egui:1}
+
 > execute as @s[scores={tsEGUI_guiVal=1}] run say #1
 
 Several items can have the same id, and both will trigger the same commands.
@@ -46,6 +51,7 @@ Several items can have the same id, and both will trigger the same commands.
 
 
 > replaceitem entity @s enderchest.26 water_bucket{eval:3,egui:1}
+
 > execute as @s[scores={tsEGUI_guiVal=3}] run scoreboard players set @s tsEGUI_guiSwitch 2
 
 By setting the "tsEGUI_guiSwitch" value the page is switched. All players start on page 1.
