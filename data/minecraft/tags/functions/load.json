@@ -1,5 +1,6 @@
 {
  "values": [
- "egui:gui/code/setup"
+ "egui:gui/code/setup",
+ "gui:gui/code/setup"
  ]
 }

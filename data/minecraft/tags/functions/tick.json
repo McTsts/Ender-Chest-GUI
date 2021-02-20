@@ -1,5 +1,6 @@
 {
  "values": [
- "egui:main"
+ "egui:main",
+ "gui:main"
  ]
 }
