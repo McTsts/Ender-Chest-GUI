@@ -1,14 +1,14 @@
-# Ender-Chest-GUI
+# Ender-Chest-GUI + Chest GUI
 
 Simple Ender Chest GUI for Minecraft.
 
 If anyone ever find this, feel free to use these functions for whatever you want if you can understand them. Credit is appreciated, but not required.
 
+The egui namespaces implements an Ender Chest GUI, the gui namespace implements a normal chest (or other container) UI. They can be used separarely and either of those two namespaces can be deleted if you only want to use one of the gui systems.
+
 # Setup 
 
-Run the function egui:gui/code/main to run it
-
-Run the function egui:gui/code/setup once to set it up
+Modify the functions in the gui folder to set up your own ui (see Basic Information).
 
 Functions within the gui/code folder can otherwise be fully ignored, and don't need to be edited.
 
