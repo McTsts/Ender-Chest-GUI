@@ -1,4 +1,4 @@
-# Ender-Chest-GUI
+# Ender-Chest-GUI + Chest GUI
 
 Simple Ender Chest GUI for Minecraft.
 
