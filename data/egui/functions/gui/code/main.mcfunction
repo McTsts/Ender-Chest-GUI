@@ -3,7 +3,7 @@ execute as @a unless score @s tsEGUI_guiPage matches -10000.. run scoreboard pla
 
 # Execute EGUI (w/ Check)
 execute as @a store result score @s tsEGUI_guiCount if data entity @s EnderItems[{tag:{egui:1}}]
-execute as @a store result score @s tsEGUI_guiCount2 if data entity @s EnderItems
+execute as @a store result score @s tsEGUI_guiCount2 if data entity @s EnderItems[]
 execute as @a unless score @s tsEGUI_guiPrev = @s tsEGUI_guiCount run tag @s add tsEGUI_Check
 execute as @a unless score @s tsEGUI_guiPrev = @s tsEGUI_guiCount2 run tag @s add tsEGUI_Check
 execute as @a[tag=tsEGUI_Check] run function egui:gui/code/eval
