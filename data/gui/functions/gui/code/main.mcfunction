@@ -2,7 +2,7 @@
 execute unless score @s tsGUI_guiPage matches -10000.. run scoreboard players set @s tsGUI_guiSwitch 1
 
 # Execute GUI (w/ Check)
-execute store result score @s tsGUI_guiCount run data get block ~ ~ ~ Items
+execute store result score @s tsGUI_guiCount run data get block ~ ~ ~ Items[]
 execute store result score @s tsGUI_guiCount2 if data block ~ ~ ~ Items[{tag:{gui:1}}]
 execute unless score @s tsGUI_guiPrev = @s tsGUI_guiCount run tag @s add tsGUI_Check
 execute unless score @s tsGUI_guiPrev = @s tsGUI_guiCount2 run tag @s add tsGUI_Check
